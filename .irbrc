@@ -1,0 +1,6 @@
+require "irb/completion"
+require "cloudkit"
+require "json"
+require "rufus-tokyo"
+require "ostruct"
+require "restclient"

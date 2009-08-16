@@ -4,7 +4,22 @@
 Cloudy is simple playground for testing cloudkit.
 
 == Usage
-Running is as easy as rackup, there is also ./console with some prerequired.
+Running is as easy as runnin 
+  % rackup 
+or 
+  % rackup persistent.ru
+for tokyo-cabinet (OMG!!!)).
+
+For console just use
+  % restclient http://localhost:9292
+from rest-client.
+
+== Dependencies
+
+* json
+* cloudkit - github.com/jcrosby/cloudkit
+* restclient - github.com/adamwiggins/rest-clien
+* rufus-tokyo - github.com/jmettraux/rufus-tokyo only for persistent setup
 
 == License
 
