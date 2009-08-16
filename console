@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+libs =  " -r irb/completion"
+libs << " -r cloudkit"
+libs << " -r json"
+libs << " -r rufus-tokyo"
+libs << " -r ostruct"
+libs << " -r restclient"
+
+exec "irb #{libs} --simple-prompt"
+
