@@ -6,4 +6,4 @@ require 'rufus/tokyo/tyrant'
 use CloudKit::Service, :collections => @config['collections'].map(&:to_sym)
 CloudKit.setup_storage_adapter(Rufus::Tokyo::Table.new('database.tdb'))
 use Rack::Session::Pool
-puts "* resources on this server: %s" % config['collections'].join(', ')
+puts "* resources on this server: %s" % @config['collections'].join(', ')
