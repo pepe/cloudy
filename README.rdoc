@@ -22,7 +22,11 @@ there are some self explaining ;) methods preloaded
   irb:> create({:title => 'Big one'}, 'lists')
   => #<OpenStruct uri="/lists/uuid", ok=true, etag="etag", last_modified="Sun, 16 Aug 2009 14:52:05 GMT">
   irb:> fetch('lists')
-  #<OpenStruct offset=0, total=1, uris=["/lists/4a19f8f0-6ca2-012c-2366-002332d40f38"]>
+  #<OpenStruct offset=0, total=1, uris=["/lists/uuid"]>
+  irb:> set_current_path('lists')
+  => "lists"
+  irb:> fetch
+  #<OpenStruct offset=0, total=1, uris=["/lists/uuid"]>
 
 == Dependencies
 
