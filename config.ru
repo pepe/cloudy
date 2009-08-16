@@ -2,7 +2,7 @@ require 'cloudkit'
 require 'rufus/tokyo' 
 require 'rufus/tokyo/tyrant' 
 
-collections = [:lists]
-use CloudKit::Service, :collections => collections
+config = YAML.load(File.read('config.yml'))
+use CloudKit::Service, :collections => config['collections']
 use Rack::Session::Pool
-puts "* resources on this server: %s" % collections.join(', ')
+puts "* resources on this server: %s" % config['collections'].join(', ')

@@ -4,6 +4,8 @@
 Cloudy is simple playground for testing cloudkit.
 
 == Usage
+You can set collections you want to have served by server in config.yml.
+
 Running is as easy as runnin 
   % rackup 
 or 
