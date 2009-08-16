@@ -8,7 +8,7 @@ Running is as easy as rackup, there is also ./console with some prerequired.
 
 == License
 
-Copyright (c) 2008 pepe@gravastar.cz
+Copyright (c) 2009 pepe@gravastar.cz
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
