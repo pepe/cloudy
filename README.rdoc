@@ -15,6 +15,7 @@ for tokyo-cabinet (OMG!!!)).
 For console just use
   % restclient http://localhost:9292
 there are some self explaining ;) methods preloaded
+  irb:> paths
   irb:> fetch('lists')
   irb:> create({:title => 'Big one'}, 'lists')
 

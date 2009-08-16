@@ -5,6 +5,11 @@ require "rufus-tokyo"
 require "ostruct"
 require "restclient"
 
+# returns paths to resources on this server
+def paths
+  fetch('cloudkit-meta')
+end
+
 # returns OpenStruct created form get to path
 def fetch(path)
   to_ostruct(get(path))
